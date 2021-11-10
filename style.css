@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Libre+Baskerville:wght@700&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Crimson Text', serif;
+    min-height: 100vh;
+    background: linear-gradient(to left, #c5d5cb , #e3e0cf);
+	width: 100vw;
+	height: 100vh;
+
+}
+
+.banner-text{
+    width: 100%;
+    position: absolute;
+}
+
+.banner-text ul{
+    height: 50px;
+    float: right;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.banner-text ul li{
+    display: inline-block;
+    padding: 40px 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    
+}
+.banner-text ul li a{
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+
+.banner-text ul li a::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #c60021;
+
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 250ms ease-in;
+}
+.banner-text ul li a:hover::after {
+	transform: scaleX(1);
+}
+.banner-text h2 {
+	text-align: left;
+	color:black;
+	font-size: 50px;
+	margin-top: 14%;
+    margin-left: 50px;
+}
+
+.banner-text p{
+    text-align: left;
+    font-size:  30px;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-right: 75px;
+}
+
+
+.fab:hover{
+    opacity: 0.7;
+}
+.fab{
+    font-size: 50px;
+    padding: 8px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.container{
+ margin: 0 auto;
+ padding: 0 3rem;
+ text-align: center;
+}
+
+.container h1{
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    margin-top: 115px;
+}
+
+.container p{
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+
+.image{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.content{
+    position:absolute;
+    top: 300px;
+    right: 280px;
+    transform: translate(-50%, -50%);
+}
+
+
+
+#click{
+    display: none;
+}
+
+.click-me{
+    position:absolute;
+    right: 600px;
+    display: block;
+    width: 160px;
+    height: 50px;
+    background: #c60021;
+    border: 1px solid #c5d5cb;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    line-height: 50px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.click-me:hover{
+    background:rosybrown;
+}
+
+.content{
+    opacity: 0;
+    visibility: hidden;
+    width: 400px;
+    height: 350px;
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.4);
+    transition: .3s ease-in;
+}
+
+#click:checked ~ .content{
+    opacity: 1;
+    visibility: visible;
+}
+
+.header{
+    height: 90px;
+    background: #c60021;
+    overflow:hidden;
+    border-radius: 3px 3px 0 0;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.2);
+}
+
+.header h2{
+    position:absolute ;
+    color: white;
+    padding-left: 70px;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.fa-times{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+p{
+   
+    font-size: 19px;
+    color: #1a1a1a;
+    text-align: center;
+}
+
+
+
+.close-btn{
+    position: absolute;
+    bottom: 12px;
+    right: 25px;
+    border: 1px solid #c60021;
+    border-radius: 3px;
+    color: #c60021;
+    padding: 8px 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.close-btn:hover{
+    background: #c60021;
+    color: white;
+    transition: .5s;
+}
+
+.skills{
+    font-size: 30px;
+    width: 500px;
+    margin: 60px auto;
+    list-style: none;
+    margin-top: 200px;
+}
+
+.skills li{
+    margin: 20px 0;
+}
+
+.bar{
+    background: white;
+    display: block;
+    height: 2px;
+    border: 10px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    
+}
+
+.bar span{
+    height: 2px;
+    float: left;
+    background: #c60021;
+}
+
+.html{
+    width: 90%;
+    animation: html 2s;
+}
+
+.css{
+    width: 80%;
+    animation: css 2s;
+}
+
+.javascript{
+    width: 50%;
+    animation: javascript 2s;
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
